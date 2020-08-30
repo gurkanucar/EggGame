@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_linear"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:background="@drawable/egg"
+            android:layout_marginBottom="30dp"
+            android:layout_height="150dp">
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:text="Countdown:"
+            android:layout_marginBottom="25dp"
+            android:textColor="#251D00"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:text="  30 Seconds  "
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:id="@+id/halfMinute"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_height="wrap_content"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="  60 Seconds  "
+                android:id="@+id/minute"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="  ∞  "
+                android:id="@+id/infinite"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"></Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:text="Player Counts:"
+            android:layout_marginBottom="25dp"
+            android:textColor="#251D00"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+        </TextView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_height="wrap_content">
+           <Button
+               android:layout_width="wrap_content"
+               android:text="-"
+               android:textSize="25dp"
+               android:id="@+id/decrease"
+               android:textColor="@android:color/white"
+               android:background="@drawable/button_background"
+               android:layout_height="wrap_content"></Button>
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="2"
+               android:textColor="#251D00"
+               android:id="@+id/playerCounts"
+               android:textSize="30dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:layout_height="wrap_content"></TextView>
+           <Button
+               android:layout_width="wrap_content"
+               android:text="+"
+               android:id="@+id/increase"
+               android:textColor="@android:color/white"
+               android:background="@drawable/button_background"
+               android:textSize="25dp"
+               android:layout_height="wrap_content"></Button>
+       </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:text="PLAY !"
+            android:id="@+id/play"
+            android:background="@drawable/button_background"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:textSize="40dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/info"
+            android:text="How To Play?"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:textAllCaps="false"
+            android:textSize="30dp"
+            android:layout_margin="25dp"
+
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
